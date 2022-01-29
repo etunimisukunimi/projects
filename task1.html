@@ -3,10 +3,16 @@
   <meta charset="utf-8" />
   <body>
     <script>
-      var result = prompt("Значение");
-      var result2 = result.split();
+      let result = prompt("Значение");
+      let result2 = result.split("");
+      let summ = 0;
+      for (let i = 0; i < result2.length; i++) {
+        const currentNumber = result2[i];
+        console.log(currentNumber);
 
-      alert(result2);
+        summ = summ + Number(currentNumber);
+      }
+      console.log(summ);
     </script>
   </body>
 </html>
