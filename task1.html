@@ -4,17 +4,15 @@
   <body>
     <script>
       let result = prompt("Значение");
-      let result2 = result.split("");
-      let summ = 0;
-      let as;
+      let value = result.split("");
+      let answerValue = 0;
 
-      for (let i = 0; i < result2.length; i++) {
-        const currentNumber = result2[i];
+      for (let i = 0; i < value.length; i++) {
+        const currentNumber = value[i];
         console.log(currentNumber);
-
-        summ = summ + Number(currentNumber);
+        answerValue = answerValue + Number(currentNumber);
       }
-      console.log(summ);
+      console.log(answerValue);
     </script>
   </body>
 </html>
