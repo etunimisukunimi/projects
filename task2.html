@@ -3,11 +3,10 @@
   <meta charset="utf-8" />
   <body>
     <script>
-      let result = prompt("Значение");
-      let value = result.split("");
-      let answerValue = 0;
-
       function valueCount() {
+        let result = prompt("Значение");
+        let value = result.split("");
+        let answerValue = 1;
         for (let i = 0; i < value.length; i++) {
           const currentNumber = value[i];
           console.log(currentNumber);
