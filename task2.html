@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <body>
+    <script>
+      let result = prompt("Значение");
+      let value = result.split("");
+      let answerValue = 1;
+
+      function valueCount() {
+        for (let i = 0; i < value.length; i++) {
+          const currentNumber = value[i];
+          console.log(currentNumber);
+          answerValue = answerValue * Number(currentNumber);
+        }
+        console.log(answerValue);
+      }
+      valueCount();
+    </script>
+  </body>
+</html>
